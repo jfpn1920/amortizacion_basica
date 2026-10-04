@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amortizacion basica</title>
+    <link rel="stylesheet" href="amortizacion_basica.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="amortizacion_basica.js" defer></script>
+</head>
+<body>
+    <!---------------------------------------->
+    <!--|estructuracion_amortizacion_basica|-->
+    <!---------------------------------------->
+    <div class="contenedor_amortizacion">
+
+        <!--==============================-->
+        <!--|encabezado_amortizacion|-->
+        <!--==============================-->
+        <header class="encabezado_amortizacion">
+            <h1>Amortización Básica</h1>
+            <p>Calcula las cuotas de un préstamo fácilmente.</p>
+        </header>
+
+        <!--==============================-->
+        <!--|contenido_amortizacion|-->
+        <!--==============================-->
+        <main class="contenido_amortizacion">
+
+            <!--==============================-->
+            <!--|formulario_amortizacion|-->
+            <!--==============================-->
+            <section class="formulario_amortizacion">
+
+                <div class="campo_amortizacion">
+                    <label for="monto_prestamo">Monto del préstamo</label>
+                    <input type="number" id="monto_prestamo" placeholder="Ej. 5000000" min="1">
+                </div>
+
+                <div class="campo_amortizacion">
+                    <label for="tasa_interes">Tasa de interés anual (%)</label>
+                    <input type="number" id="tasa_interes" placeholder="Ej. 12" min="0" step="0.01">
+                </div>
+
+                <div class="campo_amortizacion">
+                    <label for="numero_cuotas">Número de cuotas</label>
+                    <input type="number" id="numero_cuotas" placeholder="Ej. 12" min="1">
+                </div>
+
+            </section>
+
+            <!--==============================-->
+            <!--|botones_amortizacion|-->
+            <!--==============================-->
+            <section class="botones_amortizacion">
+                <button id="boton_calcular">Calcular amortización</button>
+                <button id="boton_limpiar">Limpiar datos</button>
+            </section>
+
+            <!--==============================-->
+            <!--|resumen_amortizacion|-->
+            <!--==============================-->
+            <section class="resumen_amortizacion">
+                <h2>Resumen del préstamo</h2>
+
+                <div class="datos_resumen">
+
+                    <div class="dato_resumen">
+                        <span>Cuota mensual</span>
+                        <strong id="cuota_mensual">$0</strong>
+                    </div>
+
+                    <div class="dato_resumen">
+                        <span>Total intereses</span>
+                        <strong id="total_intereses">$0</strong>
+                    </div>
+
+                    <div class="dato_resumen">
+                        <span>Total pagado</span>
+                        <strong id="total_pagado">$0</strong>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--==============================-->
+            <!--|tabla_amortizacion|-->
+            <!--==============================-->
+            <section class="tabla_amortizacion">
+                <h2>Tabla de amortización</h2>
+
+                <div class="contenedor_tabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Cuota</th>
+                                <th>Pago</th>
+                                <th>Interés</th>
+                                <th>Capital</th>
+                                <th>Saldo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpo_tabla">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+
+        <!--==============================-->
+        <!--|pie_amortizacion|-->
+        <!--==============================-->
+        <footer class="pie_amortizacion">
+            <p>Proyecto frontend - Amortización Básica</p>
+        </footer>
+
+    </div>
+</body>
+</html>

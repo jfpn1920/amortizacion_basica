@@ -1,0 +1,218 @@
+/*------------------------------*/
+/*--|estilos_generales|--*/
+/*------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef4f8;
+    color: #243447;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+/*------------------------------*/
+/*--|contenedor_amortizacion|--*/
+/*------------------------------*/
+
+.contenedor_amortizacion {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    background: #ffffff;
+    border: 2px solid #c7d7e3;
+}
+
+/*------------------------------*/
+/*--|encabezado_amortizacion|--*/
+/*------------------------------*/
+
+.encabezado_amortizacion {
+    background: #5d9cc7;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+.encabezado_amortizacion h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.encabezado_amortizacion p {
+    font-size: 16px;
+}
+
+/*------------------------------*/
+/*--|contenido_amortizacion|--*/
+/*------------------------------*/
+
+.contenido_amortizacion {
+    padding: 30px;
+}
+
+/*------------------------------*/
+/*--|formulario_amortizacion|--*/
+/*------------------------------*/
+
+.formulario_amortizacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.campo_amortizacion {
+    background: #f4f8fb;
+    border: 1px solid #ccdce7;
+    padding: 20px;
+}
+
+.campo_amortizacion label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.campo_amortizacion input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aebfca;
+    font-size: 15px;
+}
+
+.campo_amortizacion input:focus {
+    outline: 2px solid #5d9cc7;
+}
+
+/*------------------------------*/
+/*--|botones_amortizacion|--*/
+/*------------------------------*/
+
+.botones_amortizacion {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.botones_amortizacion button {
+    border: none;
+    padding: 13px 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#boton_calcular {
+    background: #3f82b5;
+    color: #ffffff;
+}
+
+#boton_limpiar {
+    background: #d9e4eb;
+    color: #243447;
+}
+
+.botones_amortizacion button:hover {
+    opacity: 0.9;
+}
+
+/*------------------------------*/
+/*--|resumen_amortizacion|--*/
+/*------------------------------*/
+
+.resumen_amortizacion {
+    background: #eaf4fb;
+    border: 1px solid #bfd7e6;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.resumen_amortizacion h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.datos_resumen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.dato_resumen {
+    background: #ffffff;
+    border: 1px solid #c8dce8;
+    padding: 18px;
+    text-align: center;
+}
+
+.dato_resumen span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.dato_resumen strong {
+    font-size: 21px;
+    color: #3476a5;
+}
+
+/*------------------------------*/
+/*--|tabla_amortizacion|--*/
+/*------------------------------*/
+
+.tabla_amortizacion {
+    border-top: 2px solid #d7e3eb;
+    padding-top: 25px;
+}
+
+.tabla_amortizacion h2 {
+    margin-bottom: 18px;
+}
+
+.contenedor_tabla {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th,
+td {
+    border: 1px solid #ccdce7;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #5d9cc7;
+    color: #ffffff;
+}
+
+td {
+    background: #f8fafb;
+}
+
+/*------------------------------*/
+/*--|pie_amortizacion|--*/
+/*------------------------------*/
+
+.pie_amortizacion {
+    text-align: center;
+    padding: 20px;
+    background: #f1f5f7;
+    border-top: 1px solid #d4e0e7;
+    font-size: 14px;
+}
